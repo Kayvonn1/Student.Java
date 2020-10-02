@@ -1,0 +1,31 @@
+public class Assign3Test {
+	
+	public static void main(String[] args) {
+		
+	Student aj = new Student("Abdulmuhsin J. Al-Kandari", "s0936669@monmouth.edu", "SE");
+	Student justin = new Student("Justin R. Schlemm", "s0898474@monmouth.edu", "SE");
+	Student mary = new Student("Mary F. Menges", "s1012284@monmouth.edu", "SE");
+	Student nick = new Student("Nicholas-Jason R. Roache", "s0906695@monmouth.edu", "CS");
+	Student taylor = new Student("Taylor J. Klodowski", "s0912276@monmouth.edu", "SE");	
+	Student veronica = new Student("Veronica M. Granite", "s1068680@monmouth.edu", "CS");
+	// new students
+	Student isaiah = new Student("Isaiah K. Bishop" , "s1288086@monmonmouth.edu", "CS");
+	Student spike = new Student("Spike N. Mike" , "s1356895@monmonmouth.edu", "CS");
+	Student bishop = new Student("Bishop J. Pastor" , "s35754325@monmonmouth.edu", "SE");
+	Student kayvonn = new Student("Kayvonn L. Lastor" , "s97536809@monmonmouth.edu", "SE");
+	Student zay = new Student("Zay A. Hey" , "s98643257@monmonmouth.edu", "CS");
+	
+	Student[] studentArray = {aj, justin, mary, nick, taylor, veronica, isaiah, spike, bishop, kayvonn, zay };
+	StudentList myStudentList = new StudentList(studentArray);
+	
+	System.out.println("Total Studnets in CS: " + myStudentList.studentCount("CS"));
+	System.out.println("Total Studnets in SE: " + myStudentList.studentCount("SE"));
+	System.out.println("Total Studnets in HIS: " + myStudentList.studentCount("HIS"));
+	
+	
+	
+	System.out.println(myStudentList.getAllstudentInfo());
+	
+	
+	}//end of main
+}//end of class
